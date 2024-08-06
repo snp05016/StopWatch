@@ -1,28 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+body{
+  background-color: beige;
+}
+h1{
+    text-align: center;
+    font-family: 'poppins';
+  }
   .stopwatch {
     border: 2px solid rgb(0, 0, 0);
+    box-shadow:#a8a8a8 10px 10px;
     color:white;
     text-align: center;
     width: 55%; 
     max-width: 600px; 
     margin: 0 auto;
     border-radius: 10px;
-    background-image: linear-gradient(#21223F, rgb(60, 45, 112));
+    background-image: linear-gradient(#1c23f3, rgb(91, 125, 219));
     padding: 20px; 
+    overflow: hidden; /* Ensure content doesn't overflow */
+    transition: height 0.2s ease-in-out; /* Smooth transition for height */
+    
   }
 
   .display {
     margin: 20px auto 40px auto; 
-    box-shadow:#1f1f38 5px 5px;
+    box-shadow:#45454b 5px 5px;
     padding: 10px;
     font-size: 3.5rem;
     font-weight:500;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', Courier, monospace;
+    background-color: rgb(243, 227, 227);
     border-radius: 10px;
+    font-family: 'Poppins', Courier, monospace;
+    color: black;
   }
   .start-btn{
     border-style:none;
-    color:#ccc;
-    background-color: transparent;
+    color:#ffffff;
+    background-color: rgb(33, 192, 33);
     padding:15px 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     border-color:white;
@@ -30,10 +46,13 @@
     cursor:pointer;
     margin: 0px 10px;
     margin-bottom: 50px;
+    font-size: 20px;
+    font-family: 'Poppins', Courier, monospace;
+
   }
   .stop-btn{
-    color:#ccc;
-    background-color: transparent;
+    color:#ffffff;
+    background-color:red;
     border-style:none;
     border-color:rgb(190, 195, 206);;
     padding:15px 30px;
@@ -42,11 +61,13 @@
     cursor:pointer;
     margin: 0px 10px;
     margin-bottom: 50px;
+    font-size: 20px;
+    font-family: 'Poppins', Courier, monospace;
   }
   .reset-btn{
     border-style:none;
-    color:#f5970a;
-    background-color: transparent;
+    color:#ffffff;
+    background-color: blue;
     padding:15px 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -54,28 +75,39 @@
     border-color:rgb(190, 195, 206);;
     margin: 0px 10px;
     margin-bottom: 50px;
+    font-size: 20px;
+    font-family: 'Poppins', Courier, monospace;
 
   }
 
   .lap-btn{
-    color:#f5970a;
+    color:#ffffff;
     border-style:none;
-    background-color: transparent;
+    background-color: #f5600a;
     padding:15px 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    font-size: 25px;
     border-color:rgb(190, 195, 206);;
     cursor:pointer;
     margin: 0px 10px;
     margin-bottom: 50px;
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 20px;
+    
   }
   .lap {
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid #ccc;
       padding: 5px 0;
-      color:#ccc;
+      color:#ffffff;
       margin-bottom:5px;
+      font-size: 15px;
+      font-family: 'Poppins', Courier, monospace;
+      overflow: hidden; /* Ensure content doesn't overflow */
+      transition: height 0.2s ease-in-out; /* Smooth transition for height */
+
   }
   .lap:first-child{
       display: flex;
@@ -85,19 +117,26 @@
       padding: 5px 0;
       margin-bottom:5px;
       padding:20px 0px 5px 0px;
+      font-family: 'Poppins', Courier, monospace;
+      font-size: 15px;
   }
 
   .lap-number {
       text-align: left;
+      font-size: 15px;
+      font-family: 'Poppins', Courier, monospace;
   }
 
   .lap-time {
       text-align: right;
+      font-size:15px;
+      font-family: 'Poppins', Courier, monospace;
   }
 
   @media (max-width: 600px) {
       .display {
           font-size: 1.5em;
+          font-size: 15px;
       }
 
       .controls {
@@ -127,57 +166,3 @@
   .semi{
     color:#c59b5d;
 }
-/* .card{
-  border:2px solid hsl(0, 0%, 80%);
-  border-radius: 10px;
-  box-shadow:5px 5px 5px rgba(0, 0, 0, 0.1);
-  padding:20px;
-  margin:10px;
-  text-align:center;
-  max-width: 250px;
-  display:inline-block;
-
-}
-.card .card-image{
-  max-width: 60%;
-  height: auto;
-  border-radius:50%;
-  margin-bottom:10px;
-}
-
-.card .card-title{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin:0;
-  color: tomato;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;  
-}
-
-.card .card-text{
-  font-size: 15px;
-  font-family:'Courier New', Courier, monospace;
-
-} */
-
-/* .welcome-message{
-  font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight:bolder;
-  padding: 10px;
-  background-color: rgb(233, 31, 17);
-  border: 1px solid black;
-  border-radius: 5px;
-  color:white;
-
-}
-.login{
-  font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight:bolder;
-  padding: 10px;
-  background-color: rgb(2, 240, 34);
-  border: 1px solid black;
-  border-radius: 5px;
-  color:white;
-} */
